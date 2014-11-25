@@ -1,42 +1,43 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/LabaTwo/LabaTwo/SCHEME_TEST_isim_beh.exe -prj C:/LabaTwo/LabaTwo/SCHEME_TEST_beh.prj work.SCHEME_TEST 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/repo/avmis/SCHEME_TEST_isim_beh.exe" -prj "D:/repo/avmis/SCHEME_TEST_beh.prj" "work.SCHEME_TEST" 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/LabaTwo/LabaTwo/JKTrigger.vhd" into library work
-Parsing VHDL file "C:/LabaTwo/LabaTwo/SCHEME.vhd" into library work
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 96: Actual for formal port j is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 100: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 102: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 104: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 106: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 108: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 110: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 112: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 114: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 135: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 137: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 139: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 141: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 143: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 145: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 147: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/LabaTwo/LabaTwo/SCHEME.vhd" Line 149: Actual for formal port c is neither a static name nor a globally static expression
-Parsing VHDL file "C:/LabaTwo/LabaTwo/SCHEME_TEST.vhd" into library work
+Parsing VHDL file "D:/repo/avmis/JKTrigger.vhd" into library work
+Parsing VHDL file "D:/repo/avmis/SCHEME.vhd" into library work
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 96: Actual for formal port j is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 100: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 102: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 104: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 106: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 108: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 110: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 112: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 114: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 135: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 137: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 139: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 141: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 143: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 145: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 147: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 149: Actual for formal port c is neither a static name nor a globally static expression
+Parsing VHDL file "D:/repo/avmis/SCHEME_TEST.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 101480 KB
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 108128 KB
+Fuse CPU Usage: 670 ms
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package std_logic_arith
 Compiling package textio
 Compiling package std_logic_textio
 Compiling architecture jkt of entity JKTrigger [jktrigger_default]
 Compiling architecture behavioral of entity SCHEME [scheme_default]
 Compiling architecture behavior of entity scheme_test
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
-Compiled 9 VHDL Units
-Built simulation executable C:/LabaTwo/LabaTwo/SCHEME_TEST_isim_beh.exe
-Fuse Memory Usage: 115800 KB
-Fuse CPU Usage: 764 ms
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 10 VHDL Units
+Built simulation executable D:/repo/avmis/SCHEME_TEST_isim_beh.exe
+Fuse Memory Usage: 125328 KB
+Fuse CPU Usage: 997 ms

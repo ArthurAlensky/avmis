@@ -1,10 +1,156 @@
 ISim log file
-Running: C:\LabaTwo\LabaTwo\SCHEME_TEST_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/LabaTwo/LabaTwo/SCHEME_TEST_isim_beh.wdb 
+Running: D:\repo\avmis\SCHEME_TEST_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/repo/avmis/SCHEME_TEST_isim_beh.wdb 
 ISim P.20131013 (signature 0x8ef4fb42)
-This is a Full version of ISim.
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 20000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 1010 ns: Error: Test error!
+at 1515 ns: Error: Test error!
+at 3030 ns: Error: Test error!
+at 3535 ns: Error: Test error!
+at 5050 ns: Error: Test error!
+at 5555 ns: Error: Test error!
+at 7070 ns: Error: Test error!
+at 7575 ns: Error: Test error!
+at 9090 ns: Error: Test error!
+at 9595 ns: Error: Test error!
+at 11110 ns: Error: Test error!
+at 11615 ns: Error: Test error!
+at 13130 ns: Error: Test error!
+at 13635 ns: Error: Test error!
+at 15150 ns: Error: Test error!
+at 15655 ns: Error: Test error!
+at 17170 ns: Error: Test error!
+at 17675 ns: Error: Test error!
+at 19190 ns: Error: Test error!
+at 19695 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 1515 ns: Error: Test error!
+at 2525 ns: Error: Test error!
+at 3030 ns: Error: Test error!
+at 5555 ns: Error: Test error!
+at 6565 ns: Error: Test error!
+at 7070 ns: Error: Test error!
+at 9595 ns: Error: Test error!
+at 10605 ns: Error: Test error!
+at 11110 ns: Error: Test error!
+at 13635 ns: Error: Test error!
+at 14645 ns: Error: Test error!
+at 15150 ns: Error: Test error!
+at 17675 ns: Error: Test error!
+at 18685 ns: Error: Test error!
+at 19190 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 1515 ns: Error: Test error!
+at 3535 ns: Error: Test error!
+at 5555 ns: Error: Test error!
+at 7575 ns: Error: Test error!
+at 9595 ns: Error: Test error!
+at 11615 ns: Error: Test error!
+at 13635 ns: Error: Test error!
+at 15655 ns: Error: Test error!
+at 17675 ns: Error: Test error!
+at 19695 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 3030 ns: Error: Test error!
+at 7070 ns: Error: Test error!
+at 11110 ns: Error: Test error!
+at 15150 ns: Error: Test error!
+at 19190 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 20000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 3030 ns: Error: Test error!
+at 4040 ns: Error: Test error!
+at 11110 ns: Error: Test error!
+at 12120 ns: Error: Test error!
+at 19190 ns: Error: Test error!

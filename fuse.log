@@ -25,8 +25,8 @@ WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 149: Actual for formal
 Parsing VHDL file "D:/repo/avmis/SCHEME_TEST.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 108128 KB
-Fuse CPU Usage: 670 ms
+Fuse Memory Usage: 107616 KB
+Fuse CPU Usage: 997 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -39,5 +39,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 4 sub-compilation(s) to finish...
 Compiled 10 VHDL Units
 Built simulation executable D:/repo/avmis/SCHEME_TEST_isim_beh.exe
-Fuse Memory Usage: 125328 KB
-Fuse CPU Usage: 997 ms
+Fuse Memory Usage: 125840 KB
+Fuse CPU Usage: 1341 ms

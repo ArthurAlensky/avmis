@@ -1999,7 +1999,7 @@ LAB0:    xsi_set_current_line(104, ng0);
 
 LAB3:    t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t3 = (4 - 8);
+    t3 = (3 - 8);
     t4 = (t3 * -1);
     t5 = (1U * t4);
     t6 = (0 + t5);

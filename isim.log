@@ -8,7 +8,7 @@ This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
-# run 20000 ns
+# run 500000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 ISim P.20131013 (signature 0x8ef4fb42)
@@ -16,7 +16,7 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-# run 20000 ns
+# run 500000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 ISim P.20131013 (signature 0x8ef4fb42)
@@ -24,7 +24,7 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-# run 20000 ns
+# run 500000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 ISim P.20131013 (signature 0x8ef4fb42)
@@ -32,7 +32,559 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-# run 20000 ns
+# run 500000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 8670 ns: Error: Test error!
+at 9690 ns: Error: Test error!
+at 10710 ns: Error: Test error!
+at 11730 ns: Error: Test error!
+at 12750 ns: Error: Test error!
+at 13770 ns: Error: Test error!
+at 14790 ns: Error: Test error!
+at 15810 ns: Error: Test error!
+at 24990 ns: Error: Test error!
+at 26010 ns: Error: Test error!
+at 27030 ns: Error: Test error!
+at 28050 ns: Error: Test error!
+at 29070 ns: Error: Test error!
+at 30090 ns: Error: Test error!
+at 31110 ns: Error: Test error!
+at 32130 ns: Error: Test error!
+at 41310 ns: Error: Test error!
+at 42330 ns: Error: Test error!
+at 43350 ns: Error: Test error!
+at 44370 ns: Error: Test error!
+at 45390 ns: Error: Test error!
+at 46410 ns: Error: Test error!
+at 47430 ns: Error: Test error!
+at 48450 ns: Error: Test error!
+at 57630 ns: Error: Test error!
+at 58650 ns: Error: Test error!
+at 59670 ns: Error: Test error!
+at 60690 ns: Error: Test error!
+at 61710 ns: Error: Test error!
+at 62730 ns: Error: Test error!
+at 63750 ns: Error: Test error!
+at 64770 ns: Error: Test error!
+at 73950 ns: Error: Test error!
+at 74970 ns: Error: Test error!
+at 75990 ns: Error: Test error!
+at 77010 ns: Error: Test error!
+at 78030 ns: Error: Test error!
+at 79050 ns: Error: Test error!
+at 80070 ns: Error: Test error!
+at 81090 ns: Error: Test error!
+at 90270 ns: Error: Test error!
+at 91290 ns: Error: Test error!
+at 92310 ns: Error: Test error!
+at 93330 ns: Error: Test error!
+at 94350 ns: Error: Test error!
+at 95370 ns: Error: Test error!
+at 96390 ns: Error: Test error!
+at 97410 ns: Error: Test error!
+at 106590 ns: Error: Test error!
+at 107610 ns: Error: Test error!
+at 108630 ns: Error: Test error!
+at 109650 ns: Error: Test error!
+at 110670 ns: Error: Test error!
+at 111690 ns: Error: Test error!
+at 112710 ns: Error: Test error!
+at 113730 ns: Error: Test error!
+at 122910 ns: Error: Test error!
+at 123930 ns: Error: Test error!
+at 124950 ns: Error: Test error!
+at 125970 ns: Error: Test error!
+at 126990 ns: Error: Test error!
+at 128010 ns: Error: Test error!
+at 129030 ns: Error: Test error!
+at 130050 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 500000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 3570 ns: Error: Test error!
+at 7650 ns: Error: Test error!
+at 11730 ns: Error: Test error!
+at 15810 ns: Error: Test error!
+at 19890 ns: Error: Test error!
+at 23970 ns: Error: Test error!
+at 28050 ns: Error: Test error!
+at 32130 ns: Error: Test error!
+at 36210 ns: Error: Test error!
+at 40290 ns: Error: Test error!
+at 44370 ns: Error: Test error!
+at 48450 ns: Error: Test error!
+at 52530 ns: Error: Test error!
+at 56610 ns: Error: Test error!
+at 60690 ns: Error: Test error!
+at 64770 ns: Error: Test error!
+at 68850 ns: Error: Test error!
+at 72930 ns: Error: Test error!
+at 77010 ns: Error: Test error!
+at 81090 ns: Error: Test error!
+at 85170 ns: Error: Test error!
+at 89250 ns: Error: Test error!
+at 93330 ns: Error: Test error!
+at 97410 ns: Error: Test error!
+at 101490 ns: Error: Test error!
+at 105570 ns: Error: Test error!
+at 109650 ns: Error: Test error!
+at 113730 ns: Error: Test error!
+at 117810 ns: Error: Test error!
+at 121890 ns: Error: Test error!
+at 125970 ns: Error: Test error!
+at 130050 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 500000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 1020 ns: Error: Test error!
+at 1530 ns: Error: Test error!
+at 2040 ns: Error: Test error!
+at 3060 ns: Error: Test error!
+at 3570 ns: Error: Test error!
+at 4080 ns: Error: Test error!
+at 5100 ns: Error: Test error!
+at 5610 ns: Error: Test error!
+at 6120 ns: Error: Test error!
+at 7140 ns: Error: Test error!
+at 7650 ns: Error: Test error!
+at 8160 ns: Error: Test error!
+at 9180 ns: Error: Test error!
+at 9690 ns: Error: Test error!
+at 10200 ns: Error: Test error!
+at 11220 ns: Error: Test error!
+at 11730 ns: Error: Test error!
+at 12240 ns: Error: Test error!
+at 13260 ns: Error: Test error!
+at 13770 ns: Error: Test error!
+at 14280 ns: Error: Test error!
+at 15300 ns: Error: Test error!
+at 15810 ns: Error: Test error!
+at 16320 ns: Error: Test error!
+at 17340 ns: Error: Test error!
+at 17850 ns: Error: Test error!
+at 18360 ns: Error: Test error!
+at 19380 ns: Error: Test error!
+at 19890 ns: Error: Test error!
+at 20400 ns: Error: Test error!
+at 21420 ns: Error: Test error!
+at 21930 ns: Error: Test error!
+at 22440 ns: Error: Test error!
+at 23460 ns: Error: Test error!
+at 23970 ns: Error: Test error!
+at 24480 ns: Error: Test error!
+at 25500 ns: Error: Test error!
+at 26010 ns: Error: Test error!
+at 26520 ns: Error: Test error!
+at 27540 ns: Error: Test error!
+at 28050 ns: Error: Test error!
+at 28560 ns: Error: Test error!
+at 29580 ns: Error: Test error!
+at 30090 ns: Error: Test error!
+at 30600 ns: Error: Test error!
+at 31620 ns: Error: Test error!
+at 32130 ns: Error: Test error!
+at 32640 ns: Error: Test error!
+at 33660 ns: Error: Test error!
+at 34170 ns: Error: Test error!
+at 34680 ns: Error: Test error!
+at 35700 ns: Error: Test error!
+at 36210 ns: Error: Test error!
+at 36720 ns: Error: Test error!
+at 37740 ns: Error: Test error!
+at 38250 ns: Error: Test error!
+at 38760 ns: Error: Test error!
+at 39780 ns: Error: Test error!
+at 40290 ns: Error: Test error!
+at 40800 ns: Error: Test error!
+at 41820 ns: Error: Test error!
+at 42330 ns: Error: Test error!
+at 42840 ns: Error: Test error!
+at 43860 ns: Error: Test error!
+at 44370 ns: Error: Test error!
+at 44880 ns: Error: Test error!
+at 45900 ns: Error: Test error!
+at 46410 ns: Error: Test error!
+at 46920 ns: Error: Test error!
+at 47940 ns: Error: Test error!
+at 48450 ns: Error: Test error!
+at 48960 ns: Error: Test error!
+at 49980 ns: Error: Test error!
+at 50490 ns: Error: Test error!
+at 51 us: Error: Test error!
+at 52020 ns: Error: Test error!
+at 52530 ns: Error: Test error!
+at 53040 ns: Error: Test error!
+at 54060 ns: Error: Test error!
+at 54570 ns: Error: Test error!
+at 55080 ns: Error: Test error!
+at 56100 ns: Error: Test error!
+at 56610 ns: Error: Test error!
+at 57120 ns: Error: Test error!
+at 58140 ns: Error: Test error!
+at 58650 ns: Error: Test error!
+at 59160 ns: Error: Test error!
+at 60180 ns: Error: Test error!
+at 60690 ns: Error: Test error!
+at 61200 ns: Error: Test error!
+at 62220 ns: Error: Test error!
+at 62730 ns: Error: Test error!
+at 63240 ns: Error: Test error!
+at 64260 ns: Error: Test error!
+at 64770 ns: Error: Test error!
+at 65280 ns: Error: Test error!
+at 66300 ns: Error: Test error!
+at 66810 ns: Error: Test error!
+at 67320 ns: Error: Test error!
+at 68340 ns: Error: Test error!
+at 68850 ns: Error: Test error!
+at 69360 ns: Error: Test error!
+at 70380 ns: Error: Test error!
+at 70890 ns: Error: Test error!
+at 71400 ns: Error: Test error!
+at 72420 ns: Error: Test error!
+at 72930 ns: Error: Test error!
+at 73440 ns: Error: Test error!
+at 74460 ns: Error: Test error!
+at 74970 ns: Error: Test error!
+at 75480 ns: Error: Test error!
+at 76500 ns: Error: Test error!
+at 77010 ns: Error: Test error!
+at 77520 ns: Error: Test error!
+at 78540 ns: Error: Test error!
+at 79050 ns: Error: Test error!
+at 79560 ns: Error: Test error!
+at 80580 ns: Error: Test error!
+at 81090 ns: Error: Test error!
+at 81600 ns: Error: Test error!
+at 82620 ns: Error: Test error!
+at 83130 ns: Error: Test error!
+at 83640 ns: Error: Test error!
+at 84660 ns: Error: Test error!
+at 85170 ns: Error: Test error!
+at 85680 ns: Error: Test error!
+at 86700 ns: Error: Test error!
+at 87210 ns: Error: Test error!
+at 87720 ns: Error: Test error!
+at 88740 ns: Error: Test error!
+at 89250 ns: Error: Test error!
+at 89760 ns: Error: Test error!
+at 90780 ns: Error: Test error!
+at 91290 ns: Error: Test error!
+at 91800 ns: Error: Test error!
+at 92820 ns: Error: Test error!
+at 93330 ns: Error: Test error!
+at 93840 ns: Error: Test error!
+at 94860 ns: Error: Test error!
+at 95370 ns: Error: Test error!
+at 95880 ns: Error: Test error!
+at 96900 ns: Error: Test error!
+at 97410 ns: Error: Test error!
+at 97920 ns: Error: Test error!
+at 98940 ns: Error: Test error!
+at 99450 ns: Error: Test error!
+at 99960 ns: Error: Test error!
+at 100980 ns: Error: Test error!
+at 101490 ns: Error: Test error!
+at 102 us: Error: Test error!
+at 103020 ns: Error: Test error!
+at 103530 ns: Error: Test error!
+at 104040 ns: Error: Test error!
+at 105060 ns: Error: Test error!
+at 105570 ns: Error: Test error!
+at 106080 ns: Error: Test error!
+at 107100 ns: Error: Test error!
+at 107610 ns: Error: Test error!
+at 108120 ns: Error: Test error!
+at 109140 ns: Error: Test error!
+at 109650 ns: Error: Test error!
+at 110160 ns: Error: Test error!
+at 111180 ns: Error: Test error!
+at 111690 ns: Error: Test error!
+at 112200 ns: Error: Test error!
+at 113220 ns: Error: Test error!
+at 113730 ns: Error: Test error!
+at 114240 ns: Error: Test error!
+at 115260 ns: Error: Test error!
+at 115770 ns: Error: Test error!
+at 116280 ns: Error: Test error!
+at 117300 ns: Error: Test error!
+at 117810 ns: Error: Test error!
+at 118320 ns: Error: Test error!
+at 119340 ns: Error: Test error!
+at 119850 ns: Error: Test error!
+at 120360 ns: Error: Test error!
+at 121380 ns: Error: Test error!
+at 121890 ns: Error: Test error!
+at 122400 ns: Error: Test error!
+at 123420 ns: Error: Test error!
+at 123930 ns: Error: Test error!
+at 124440 ns: Error: Test error!
+at 125460 ns: Error: Test error!
+at 125970 ns: Error: Test error!
+at 126480 ns: Error: Test error!
+at 127500 ns: Error: Test error!
+at 128010 ns: Error: Test error!
+at 128520 ns: Error: Test error!
+at 129540 ns: Error: Test error!
+at 130050 ns: Error: Test error!
+at 130560 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 500000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 33150 ns: Error: Test error!
+at 33660 ns: Error: Test error!
+at 34170 ns: Error: Test error!
+at 34680 ns: Error: Test error!
+at 35190 ns: Error: Test error!
+at 35700 ns: Error: Test error!
+at 36210 ns: Error: Test error!
+at 36720 ns: Error: Test error!
+at 37230 ns: Error: Test error!
+at 37740 ns: Error: Test error!
+at 38250 ns: Error: Test error!
+at 38760 ns: Error: Test error!
+at 39270 ns: Error: Test error!
+at 39780 ns: Error: Test error!
+at 40290 ns: Error: Test error!
+at 40800 ns: Error: Test error!
+at 41310 ns: Error: Test error!
+at 41820 ns: Error: Test error!
+at 42330 ns: Error: Test error!
+at 42840 ns: Error: Test error!
+at 43350 ns: Error: Test error!
+at 43860 ns: Error: Test error!
+at 44370 ns: Error: Test error!
+at 44880 ns: Error: Test error!
+at 45390 ns: Error: Test error!
+at 45900 ns: Error: Test error!
+at 46410 ns: Error: Test error!
+at 46920 ns: Error: Test error!
+at 47430 ns: Error: Test error!
+at 47940 ns: Error: Test error!
+at 48450 ns: Error: Test error!
+at 48960 ns: Error: Test error!
+at 49470 ns: Error: Test error!
+at 49980 ns: Error: Test error!
+at 50490 ns: Error: Test error!
+at 51 us: Error: Test error!
+at 51510 ns: Error: Test error!
+at 52020 ns: Error: Test error!
+at 52530 ns: Error: Test error!
+at 53040 ns: Error: Test error!
+at 53550 ns: Error: Test error!
+at 54060 ns: Error: Test error!
+at 54570 ns: Error: Test error!
+at 55080 ns: Error: Test error!
+at 55590 ns: Error: Test error!
+at 56100 ns: Error: Test error!
+at 56610 ns: Error: Test error!
+at 57120 ns: Error: Test error!
+at 57630 ns: Error: Test error!
+at 58140 ns: Error: Test error!
+at 58650 ns: Error: Test error!
+at 59160 ns: Error: Test error!
+at 59670 ns: Error: Test error!
+at 60180 ns: Error: Test error!
+at 60690 ns: Error: Test error!
+at 61200 ns: Error: Test error!
+at 61710 ns: Error: Test error!
+at 62220 ns: Error: Test error!
+at 62730 ns: Error: Test error!
+at 63240 ns: Error: Test error!
+at 63750 ns: Error: Test error!
+at 64260 ns: Error: Test error!
+at 64770 ns: Error: Test error!
+at 65280 ns: Error: Test error!
+at 65790 ns: Error: Test error!
+at 66300 ns: Error: Test error!
+at 66810 ns: Error: Test error!
+at 67320 ns: Error: Test error!
+at 67830 ns: Error: Test error!
+at 68340 ns: Error: Test error!
+at 68850 ns: Error: Test error!
+at 69360 ns: Error: Test error!
+at 69870 ns: Error: Test error!
+at 70380 ns: Error: Test error!
+at 70890 ns: Error: Test error!
+at 71400 ns: Error: Test error!
+at 71910 ns: Error: Test error!
+at 72420 ns: Error: Test error!
+at 72930 ns: Error: Test error!
+at 73440 ns: Error: Test error!
+at 73950 ns: Error: Test error!
+at 74460 ns: Error: Test error!
+at 74970 ns: Error: Test error!
+at 75480 ns: Error: Test error!
+at 75990 ns: Error: Test error!
+at 76500 ns: Error: Test error!
+at 77010 ns: Error: Test error!
+at 77520 ns: Error: Test error!
+at 78030 ns: Error: Test error!
+at 78540 ns: Error: Test error!
+at 79050 ns: Error: Test error!
+at 79560 ns: Error: Test error!
+at 80070 ns: Error: Test error!
+at 80580 ns: Error: Test error!
+at 81090 ns: Error: Test error!
+at 81600 ns: Error: Test error!
+at 82110 ns: Error: Test error!
+at 82620 ns: Error: Test error!
+at 83130 ns: Error: Test error!
+at 83640 ns: Error: Test error!
+at 84150 ns: Error: Test error!
+at 84660 ns: Error: Test error!
+at 85170 ns: Error: Test error!
+at 85680 ns: Error: Test error!
+at 86190 ns: Error: Test error!
+at 86700 ns: Error: Test error!
+at 87210 ns: Error: Test error!
+at 87720 ns: Error: Test error!
+at 88230 ns: Error: Test error!
+at 88740 ns: Error: Test error!
+at 89250 ns: Error: Test error!
+at 89760 ns: Error: Test error!
+at 90270 ns: Error: Test error!
+at 90780 ns: Error: Test error!
+at 91290 ns: Error: Test error!
+at 91800 ns: Error: Test error!
+at 92310 ns: Error: Test error!
+at 92820 ns: Error: Test error!
+at 93330 ns: Error: Test error!
+at 93840 ns: Error: Test error!
+at 94350 ns: Error: Test error!
+at 94860 ns: Error: Test error!
+at 95370 ns: Error: Test error!
+at 95880 ns: Error: Test error!
+at 96390 ns: Error: Test error!
+at 96900 ns: Error: Test error!
+at 97410 ns: Error: Test error!
+at 97920 ns: Error: Test error!
+at 98430 ns: Error: Test error!
+at 98940 ns: Error: Test error!
+at 99450 ns: Error: Test error!
+at 99960 ns: Error: Test error!
+at 100470 ns: Error: Test error!
+at 100980 ns: Error: Test error!
+at 101490 ns: Error: Test error!
+at 102 us: Error: Test error!
+at 102510 ns: Error: Test error!
+at 103020 ns: Error: Test error!
+at 103530 ns: Error: Test error!
+at 104040 ns: Error: Test error!
+at 104550 ns: Error: Test error!
+at 105060 ns: Error: Test error!
+at 105570 ns: Error: Test error!
+at 106080 ns: Error: Test error!
+at 106590 ns: Error: Test error!
+at 107100 ns: Error: Test error!
+at 107610 ns: Error: Test error!
+at 108120 ns: Error: Test error!
+at 108630 ns: Error: Test error!
+at 109140 ns: Error: Test error!
+at 109650 ns: Error: Test error!
+at 110160 ns: Error: Test error!
+at 110670 ns: Error: Test error!
+at 111180 ns: Error: Test error!
+at 111690 ns: Error: Test error!
+at 112200 ns: Error: Test error!
+at 112710 ns: Error: Test error!
+at 113220 ns: Error: Test error!
+at 113730 ns: Error: Test error!
+at 114240 ns: Error: Test error!
+at 114750 ns: Error: Test error!
+at 115260 ns: Error: Test error!
+at 115770 ns: Error: Test error!
+at 116280 ns: Error: Test error!
+at 116790 ns: Error: Test error!
+at 117300 ns: Error: Test error!
+at 117810 ns: Error: Test error!
+at 118320 ns: Error: Test error!
+at 118830 ns: Error: Test error!
+at 119340 ns: Error: Test error!
+at 119850 ns: Error: Test error!
+at 120360 ns: Error: Test error!
+at 120870 ns: Error: Test error!
+at 121380 ns: Error: Test error!
+at 121890 ns: Error: Test error!
+at 122400 ns: Error: Test error!
+at 122910 ns: Error: Test error!
+at 123420 ns: Error: Test error!
+at 123930 ns: Error: Test error!
+at 124440 ns: Error: Test error!
+at 124950 ns: Error: Test error!
+at 125460 ns: Error: Test error!
+at 125970 ns: Error: Test error!
+at 126480 ns: Error: Test error!
+at 126990 ns: Error: Test error!
+at 127500 ns: Error: Test error!
+at 128010 ns: Error: Test error!
+at 128520 ns: Error: Test error!
+at 129030 ns: Error: Test error!
+at 129540 ns: Error: Test error!
+at 130050 ns: Error: Test error!
+at 130560 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 500000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 33660 ns: Error: Test error!
+at 34680 ns: Error: Test error!
+at 35700 ns: Error: Test error!
+at 36720 ns: Error: Test error!
+at 37740 ns: Error: Test error!
+at 38760 ns: Error: Test error!
+at 39780 ns: Error: Test error!
+at 40800 ns: Error: Test error!
+at 41820 ns: Error: Test error!
+at 42840 ns: Error: Test error!
+at 43860 ns: Error: Test error!
+at 44880 ns: Error: Test error!
+at 45900 ns: Error: Test error!
+at 46920 ns: Error: Test error!
+at 47940 ns: Error: Test error!
+at 48960 ns: Error: Test error!
+at 49980 ns: Error: Test error!
+at 51 us: Error: Test error!
+at 52020 ns: Error: Test error!
+at 53040 ns: Error: Test error!
+at 54060 ns: Error: Test error!
+at 55080 ns: Error: Test error!
+at 56100 ns: Error: Test error!
+at 57120 ns: Error: Test error!
+at 58140 ns: Error: Test error!
+at 59160 ns: Error: Test error!
+at 60180 ns: Error: Test error!
+at 61200 ns: Error: Test error!
+at 62220 ns: Error: Test error!
+at 63240 ns: Error: Test error!
+at 64260 ns: Error: Test error!
+at 65280 ns: Error: Test error!
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 500000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 ISim P.20131013 (signature 0x8ef4fb42)
@@ -40,117 +592,6 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-# run 20000 ns
+# run 500000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 1010 ns: Error: Test error!
-at 1515 ns: Error: Test error!
-at 3030 ns: Error: Test error!
-at 3535 ns: Error: Test error!
-at 5050 ns: Error: Test error!
-at 5555 ns: Error: Test error!
-at 7070 ns: Error: Test error!
-at 7575 ns: Error: Test error!
-at 9090 ns: Error: Test error!
-at 9595 ns: Error: Test error!
-at 11110 ns: Error: Test error!
-at 11615 ns: Error: Test error!
-at 13130 ns: Error: Test error!
-at 13635 ns: Error: Test error!
-at 15150 ns: Error: Test error!
-at 15655 ns: Error: Test error!
-at 17170 ns: Error: Test error!
-at 17675 ns: Error: Test error!
-at 19190 ns: Error: Test error!
-at 19695 ns: Error: Test error!
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 20000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-at 1515 ns: Error: Test error!
-at 2525 ns: Error: Test error!
-at 3030 ns: Error: Test error!
-at 5555 ns: Error: Test error!
-at 6565 ns: Error: Test error!
-at 7070 ns: Error: Test error!
-at 9595 ns: Error: Test error!
-at 10605 ns: Error: Test error!
-at 11110 ns: Error: Test error!
-at 13635 ns: Error: Test error!
-at 14645 ns: Error: Test error!
-at 15150 ns: Error: Test error!
-at 17675 ns: Error: Test error!
-at 18685 ns: Error: Test error!
-at 19190 ns: Error: Test error!
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 20000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 20000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 20000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 20000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-at 1515 ns: Error: Test error!
-at 3535 ns: Error: Test error!
-at 5555 ns: Error: Test error!
-at 7575 ns: Error: Test error!
-at 9595 ns: Error: Test error!
-at 11615 ns: Error: Test error!
-at 13635 ns: Error: Test error!
-at 15655 ns: Error: Test error!
-at 17675 ns: Error: Test error!
-at 19695 ns: Error: Test error!
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 20000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-at 3030 ns: Error: Test error!
-at 7070 ns: Error: Test error!
-at 11110 ns: Error: Test error!
-at 15150 ns: Error: Test error!
-at 19190 ns: Error: Test error!
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 20000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-at 3030 ns: Error: Test error!
-at 4040 ns: Error: Test error!
-at 11110 ns: Error: Test error!
-at 12120 ns: Error: Test error!
-at 19190 ns: Error: Test error!

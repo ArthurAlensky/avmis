@@ -644,9 +644,199 @@ BEGIN
 --		writeline(TestFile, OutputBuf);
 --	end process;
 
---trigger_write_test: process
---	file TestFile : text open write_mode is "write_triggers.txt";
---	file QFile : text open read_mode is "1.txt";
+trigger_write_test: process
+	file TestFile : text open write_mode is "write_triggers.txt";
+	file QFile : text open read_mode is "1.txt";
+	variable OutputBuf : line;
+	variable Buff : line;
+	variable InLine : std_logic_vector (9 downto 1);
+	variable OutLine: std_logic_vector (9 downto 1);
+begin
+	for i in 0 to 256 loop
+	
+		G <= '1';
+		not_G <= '0';
+		not_CCLR <= '0';
+		CCKEN <= '0';
+		not_CCKEN <= '0';
+		CCK <= '0';
+		not_CLOAD <= '1';
+		not_RCKEN <= '1';
+		RCK <= '0';
+		
+		wait for 5 ns;
+	
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+	
+		wait for 5 ns;
+	
+		Q(1) <= '0';
+		Q(2) <= '0';
+		Q(3) <= '0';
+		Q(4) <= '0';
+		Q(5) <= '0';
+		Q(6) <= '0';
+		Q(7) <= '0';
+		Q(8) <= '0';
+		
+		wait for 5 ns;
+		
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		
+		wait for 30 ns;
+		not_CCLR <= '1';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);		
+		
+		wait for 100 ns;
+		not_G <= '1';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 10 ns;
+		
+		readline(QFile, Buff);
+		read(Buff, inLine);
+		read(Buff, outLine);
+		Q <= outLine(9 downto 2);
+		
+		wait for 5 ns;
+		
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 50 ns;
+		not_RCKEN <= '0';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 20 ns;
+ 		G <= '0';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 20 ns;
+		RCK <= '1';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 10 ns;
+		not_RCKEN <= '1';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+
+		wait for 30 ns;
+		not_G <= '0';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+	
+		wait for 5 ns;
+		not_CLOAD <= '0';		
+		RCK <= '0';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 10 ns;
+	   not_CLOAD <= '1';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+
+		wait for 10 ns;
+		Q(1) <= 'Z';
+		Q(2) <= 'Z';
+		Q(3) <= 'Z';
+		Q(4) <= 'Z';
+		Q(5) <= 'Z';
+		Q(6) <= 'Z';
+		Q(7) <= 'Z';
+		Q(8) <= 'Z';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 10 ns;
+		G <= '1';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 90 ns;
+		not_CCKEN <= '1';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 50 ns;
+		CCKEN <= '1';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+		
+		wait for 50 ns;
+		not_CCKEN <= '0';
+		wait for 5 ns;
+		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
+		write(OutputBuf, std_logic_vector'(inLine));
+		write(OutputBuf, std_logic_vector'(outLine));
+		writeline(TestFile, OutputBuf);
+	
+	end loop;
+	wait;
+end process;
+
+
+--trigger_read_test: process
+--	file TestFile : text open read_mode is "write_triggers.txt";
 --	variable OutputBuf : line;
 --	variable Buff : line;
 --	variable InLine : std_logic_vector (9 downto 1);
@@ -654,319 +844,129 @@ BEGIN
 --begin
 --	for i in 0 to 255 loop
 --	
---		G <= '1';
---		not_G <= '0';
---		not_CCLR <= '0';
---		CCKEN <= '0';
---		not_CCKEN <= '0';
---		CCK <= '0';
---		not_CLOAD <= '1';
---		not_RCKEN <= '1';
---		RCK <= '0';
---		
---		wait for 5 ns;
---	
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---	
---		wait for 5 ns;
---	
---		Q(1) <= '0';
---		Q(2) <= '0';
---		Q(3) <= '0';
---		Q(4) <= '0';
---		Q(5) <= '0';
---		Q(6) <= '0';
---		Q(7) <= '0';
---		Q(8) <= '0';
---		
---		wait for 5 ns;
---		
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---		
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---		
---		
---		wait for 30 ns;
---		not_CCLR <= '1';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);		
---		
---		wait for 100 ns;
---		not_G <= '1';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q, not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---		
---		wait for 10 ns;
---		
---		readline(QFile, Buff);
+--		readline(TestFile, Buff);
 --		read(Buff, inLine);
 --		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 --		Q <= outLine(9 downto 2);
 --		
 --		wait for 5 ns;
---		
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---		
---		wait for 50 ns;
---		not_RCKEN <= '0';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---		
---		wait for 20 ns;
--- 		G <= '0';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---		
---		wait for 20 ns;
---		RCK <= '1';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---		
---		wait for 10 ns;
---		not_RCKEN <= '1';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
---
---		wait for 30 ns;
---		not_G <= '0';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
+--	
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 --	
 --		wait for 5 ns;
---		not_CLOAD <= '0';		
---		RCK <= '0';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
+--	
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--		Q <= outLine(9 downto 2);
+--		
+--		wait for 30 ns;
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--		
+--		wait for 100 ns;
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 --		
 --		wait for 10 ns;
---	   not_CLOAD <= '1';
+--		
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--		Q <= outLine(9 downto 2);
+--		
+--		wait for 50 ns;
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--		
+--		wait for 20 ns;
+-- 		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--	
+--		
+--		wait for 20 ns;
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--		
+--		wait for 10 ns;
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--
+--		wait for 30 ns;
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--	
 --		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--		
+--		wait for 10 ns;
+--	   readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 --
 --		wait for 10 ns;
---		Q(1) <= 'Z';
---		Q(2) <= 'Z';
---		Q(3) <= 'Z';
---		Q(4) <= 'Z';
---		Q(5) <= 'Z';
---		Q(6) <= 'Z';
---		Q(7) <= 'Z';
---		Q(8) <= 'Z';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--		Q <= outLine(9 downto 2);
 --		
 --		wait for 10 ns;
---		G <= '1';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 --		
 --		wait for 90 ns;
---		not_CCKEN <= '1';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 --		
 --		wait for 50 ns;
---		CCKEN <= '1';
---		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 --		
 --		wait for 50 ns;
---		not_CCKEN <= '0';
+--		readline(TestFile, Buff);
+--		read(Buff, inLine);
+--		read(Buff, outLine);
+--		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+--	
 --		wait for 5 ns;
---		WriteSignalsToFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK, Q , not_RCO);
---		write(OutputBuf, std_logic_vector'(inLine));
---		write(OutputBuf, std_logic_vector'(outLine));
---		writeline(TestFile, OutputBuf);
+--		
+--		assert Q = outLine(9 downto 2)
+--				report "Test error!"
+--				severity error;
 --	
 --	end loop;
 --	wait;
 --end process;
-
-
-trigger_read_test: process
-	file TestFile : text open read_mode is "write_triggers.txt";
-	variable OutputBuf : line;
-	variable Buff : line;
-	variable InLine : std_logic_vector (9 downto 1);
-	variable OutLine: std_logic_vector (9 downto 1);
-begin
-	for i in 0 to 255 loop
-	
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		Q <= outLine(9 downto 2);
-		
-		wait for 5 ns;
-	
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-	
-		wait for 5 ns;
-	
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		Q <= outLine(9 downto 2);
-		
-		wait for 30 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 100 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 10 ns;
-		
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		Q <= outLine(9 downto 2);
-		
-		wait for 50 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 20 ns;
- 		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-	
-		
-		wait for 20 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 10 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-
-		wait for 30 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-	
-		wait for 5 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 10 ns;
-	   readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-
-		wait for 10 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		Q <= outLine(9 downto 2);
-		
-		wait for 10 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 90 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 50 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 50 ns;
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-	
-		wait for 5 ns;
-		
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
-	
-	end loop;
-	wait;
-end process;
 
 END;

@@ -40,7 +40,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1417072893" xil_pn:in_ck="4870031886259073352" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1417072893">
+    <transform xil_pn:end_ts="1417076557" xil_pn:in_ck="4870031886259073352" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1417076557">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="JKTrigge_Test.vhd"/>
@@ -48,11 +48,11 @@
       <outfile xil_pn:name="SCHEME.vhd"/>
       <outfile xil_pn:name="SCHEME_TEST.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1416757961" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-345426489331170732" xil_pn:start_ts="1416757961">
+    <transform xil_pn:end_ts="1417076428" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-345426489331170732" xil_pn:start_ts="1417076428">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1416757961" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8428288918833162866" xil_pn:start_ts="1416757961">
+    <transform xil_pn:end_ts="1417076428" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8428288918833162866" xil_pn:start_ts="1417076428">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -60,7 +60,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1417072893" xil_pn:in_ck="4870031886259073352" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1417072893">
+    <transform xil_pn:end_ts="1417076557" xil_pn:in_ck="4870031886259073352" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1417076557">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="JKTrigge_Test.vhd"/>
@@ -68,9 +68,11 @@
       <outfile xil_pn:name="SCHEME.vhd"/>
       <outfile xil_pn:name="SCHEME_TEST.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1417072901" xil_pn:in_ck="4870031886259073352" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7329169436001638898" xil_pn:start_ts="1417072893">
+    <transform xil_pn:end_ts="1417076564" xil_pn:in_ck="4870031886259073352" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7329169436001638898" xil_pn:start_ts="1417076557">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SCHEME_TEST_beh.prj"/>
       <outfile xil_pn:name="SCHEME_TEST_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -78,9 +80,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1417072902" xil_pn:in_ck="-6864526288456967897" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1070156744403491157" xil_pn:start_ts="1417072901">
+    <transform xil_pn:end_ts="1417076565" xil_pn:in_ck="-6864526288456967897" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1070156744403491157" xil_pn:start_ts="1417076564">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SCHEME_TEST_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

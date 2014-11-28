@@ -178,65 +178,40 @@ trigger_read_test: process
 	variable InLine : std_logic_vector (9 downto 1);
 	variable OutLine: std_logic_vector (9 downto 1);
 begin
-	for i in 0 to 264 loop
-	
-	wait for 10 ns;
+	for i in 0 to 256 loop
 	
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 		Q <= outLine(9 downto 2);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
-				
-		wait for 5 ns;
-	
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
-	
-	
-		wait for 5 ns;
-	
-		readline(TestFile, Buff);
-		read(Buff, inLine);
-		read(Buff, outLine);
-		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		Q <= outLine(9 downto 2);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
+		wait for 5 ns;
+	
+		readline(TestFile, Buff);
+		read(Buff, inLine);
+		read(Buff, outLine);
+		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+	
+		wait for 5 ns;
+	
+		readline(TestFile, Buff);
+		read(Buff, inLine);
+		read(Buff, outLine);
+		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
+		Q <= outLine(9 downto 2);
 		
 		wait for 30 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
-		
 		
 		wait for 100 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 10 ns;
 		
@@ -245,122 +220,74 @@ begin
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 		Q <= outLine(9 downto 2);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 50 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 20 ns;
  		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
+	
 		
 		wait for 20 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 10 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
-		
+
 		wait for 30 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
-				
+	
 		wait for 5 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 10 ns;
 	   readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
-				
+
 		wait for 10 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 		Q <= outLine(9 downto 2);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 10 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 90 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 50 ns;
 		readline(TestFile, Buff);
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		wait for 5 ns;
-		assert Q = outLine(9 downto 2)
-				report "Test error!"
-				severity error;
 		
 		wait for 50 ns;
 		readline(TestFile, Buff);
@@ -369,6 +296,7 @@ begin
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
 	
 		wait for 5 ns;
+		
 		assert Q = outLine(9 downto 2)
 				report "Test error!"
 				severity error;
@@ -382,7 +310,7 @@ begin
 		read(Buff, inLine);
 		read(Buff, outLine);
 		ReadSignalsFromFile(inLine, outLine, G, not_G, not_CCLR, CCKEN, not_CCKEN, CCK, not_CLOAD, not_RCKEN, RCK);
-		--wait for 10 ns;
+		wait for 10 ns;
 		write(ReportBuff, outLine(9 downto 2));
 		write(ReportBuff, "=>");
 		write(ReportBuff, Q);

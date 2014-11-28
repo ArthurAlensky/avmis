@@ -1514,7 +1514,7 @@ static void work_a_0564666594_3212880686_p_25(char *t0)
     unsigned int t8;
     unsigned int t9;
     unsigned char t10;
-    char *t11;
+    unsigned char t11;
     char *t12;
     char *t13;
     char *t14;
@@ -1525,6 +1525,7 @@ static void work_a_0564666594_3212880686_p_25(char *t0)
     char *t19;
     char *t20;
     char *t21;
+    char *t22;
 
 LAB0:    xsi_set_current_line(158, ng0);
     t1 = (t0 + 2156U);
@@ -1535,16 +1536,16 @@ LAB0:    xsi_set_current_line(158, ng0);
         goto LAB3;
 
 LAB4:
-LAB5:    t16 = (t0 + 18024);
-    t17 = (t16 + 32U);
-    t18 = *((char **)t17);
-    t19 = (t18 + 40U);
-    t20 = *((char **)t19);
-    *((unsigned char *)t20) = (unsigned char)4;
-    xsi_driver_first_trans_delta(t16, 0U, 1, 0LL);
+LAB5:    t17 = (t0 + 18024);
+    t18 = (t17 + 32U);
+    t19 = *((char **)t18);
+    t20 = (t19 + 40U);
+    t21 = *((char **)t20);
+    *((unsigned char *)t21) = (unsigned char)4;
+    xsi_driver_first_trans_delta(t17, 0U, 1, 0LL);
 
-LAB2:    t21 = (t0 + 16864);
-    *((int *)t21) = 1;
+LAB2:    t22 = (t0 + 16864);
+    *((int *)t22) = 1;
 
 LAB1:    return;
 LAB3:    t1 = (t0 + 1972U);
@@ -1555,13 +1556,14 @@ LAB3:    t1 = (t0 + 1972U);
     t9 = (0 + t8);
     t1 = (t5 + t9);
     t10 = *((unsigned char *)t1);
-    t11 = (t0 + 18024);
-    t12 = (t11 + 32U);
-    t13 = *((char **)t12);
-    t14 = (t13 + 40U);
-    t15 = *((char **)t14);
-    *((unsigned char *)t15) = t10;
-    xsi_driver_first_trans_delta(t11, 0U, 1, 0LL);
+    t11 = ieee_p_2592010699_sub_1690584930_503743352(IEEE_P_2592010699, t10);
+    t12 = (t0 + 18024);
+    t13 = (t12 + 32U);
+    t14 = *((char **)t13);
+    t15 = (t14 + 40U);
+    t16 = *((char **)t15);
+    *((unsigned char *)t16) = t11;
+    xsi_driver_first_trans_delta(t12, 0U, 1, 0LL);
     goto LAB2;
 
 LAB6:    goto LAB2;

@@ -92,26 +92,25 @@ begin
 			
 			
 			
-D_impuls: JKTrigger
-PORT MAP(J => NOT not_CCKEN, K => not_CCKEN, C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => signal_impuls);		
+signal_impuls <= RCK AND( NOT not_RCKEN );
 			
 			
 D1: JKTrigger
-PORT MAP(J => Q(1), K => NOT Q(1), C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => DQ(1), NQ => NDQ(1));
+PORT MAP(J => Q(1), K => NOT Q(1), C => signal_impuls, NSET => '1', NRST => '1', Q => DQ(1), NQ => NDQ(1));
 D2: JKTrigger
-PORT MAP(J => Q(2), K => NOT Q(2), C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => DQ(2), NQ => NDQ(2));
+PORT MAP(J => Q(2), K => NOT Q(2), C => signal_impuls, NSET => '1', NRST => '1', Q => DQ(2), NQ => NDQ(2));
 D3: JKTrigger
-PORT MAP(J => Q(3), K => NOT Q(3), C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => DQ(3), NQ => NDQ(3));
+PORT MAP(J => Q(3), K => NOT Q(3), C => signal_impuls, NSET => '1', NRST => '1', Q => DQ(3), NQ => NDQ(3));
 D4: JKTrigger
-PORT MAP(J => Q(4), K => NOT Q(4), C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => DQ(4), NQ => NDQ(4));
+PORT MAP(J => Q(4), K => NOT Q(4), C => signal_impuls, NSET => '1', NRST => '1', Q => DQ(4), NQ => NDQ(4));
 D5: JKTrigger
-PORT MAP(J => Q(5), K => NOT Q(5), C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => DQ(5), NQ => NDQ(5));
+PORT MAP(J => Q(5), K => NOT Q(5), C => signal_impuls, NSET => '1', NRST => '1', Q => DQ(5), NQ => NDQ(5));
 D6: JKTrigger
-PORT MAP(J => Q(6), K => NOT Q(6), C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => DQ(6), NQ => NDQ(6));
+PORT MAP(J => Q(6), K => NOT Q(6), C => signal_impuls, NSET => '1', NRST => '1', Q => DQ(6), NQ => NDQ(6));
 D7: JKTrigger
-PORT MAP(J => Q(7), K => NOT Q(7), C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => DQ(7), NQ => NDQ(7));
+PORT MAP(J => Q(7), K => NOT Q(7), C => signal_impuls, NSET => '1', NRST => '1', Q => DQ(7), NQ => NDQ(7));
 D8: JKTrigger
-PORT MAP(J => Q(8), K => NOT Q(8), C => RCK AND( NOT not_RCKEN ), NSET => '1', NRST => '1', Q => DQ(8), NQ => NDQ(8));
+PORT MAP(J => Q(8), K => NOT Q(8), C => signal_impuls, NSET => '1', NRST => '1', Q => DQ(8), NQ => NDQ(8));
 			
 S(1) <= DQ(1) NAND (NOT not_CLOAD);
 S(2) <= DQ(2) NAND (NOT not_CLOAD);

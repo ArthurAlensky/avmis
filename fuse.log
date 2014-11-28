@@ -5,28 +5,27 @@ Turning on mult-threading, number of parallel sub-compilation jobs: 4
 Determining compilation order of HDL files
 Parsing VHDL file "D:/repo/avmis/JKTrigger.vhd" into library work
 Parsing VHDL file "D:/repo/avmis/SCHEME.vhd" into library work
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 96: Actual for formal port j is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 100: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 102: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 104: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 106: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 108: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 110: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 112: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 114: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 135: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 137: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 139: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 141: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 143: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 145: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 147: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 149: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 99: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 101: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 103: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 105: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 107: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 109: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 111: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 113: Actual for formal port k is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 134: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 136: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 138: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 140: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 142: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 144: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 146: Actual for formal port c is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 148: Actual for formal port c is neither a static name nor a globally static expression
 Parsing VHDL file "D:/repo/avmis/SCHEME_TEST.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 107488 KB
-Fuse CPU Usage: 779 ms
+Fuse Memory Usage: 107616 KB
+Fuse CPU Usage: 826 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -39,5 +38,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 4 sub-compilation(s) to finish...
 Compiled 10 VHDL Units
 Built simulation executable D:/repo/avmis/SCHEME_TEST_isim_beh.exe
-Fuse Memory Usage: 125712 KB
-Fuse CPU Usage: 1154 ms
+Fuse Memory Usage: 125840 KB
+Fuse CPU Usage: 1248 ms

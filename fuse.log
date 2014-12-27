@@ -1,42 +1,21 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/repo/avmis/SCHEME_TEST_isim_beh.exe" -prj "D:/repo/avmis/SCHEME_TEST_beh.prj" "work.SCHEME_TEST" 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/repo/avmis/JKTrigger_Test_isim_par.exe -prj D:/repo/avmis/JKTrigger_Test_par.prj JKTrigger_Test 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Parsing VHDL file "D:/repo/avmis/JKTrigger.vhd" into library work
-Parsing VHDL file "D:/repo/avmis/SCHEME.vhd" into library work
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 99: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 101: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 103: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 105: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 107: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 109: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 111: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 113: Actual for formal port k is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 134: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 136: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 138: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 140: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 142: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 144: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 146: Actual for formal port c is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "D:/repo/avmis/SCHEME.vhd" Line 148: Actual for formal port c is neither a static name nor a globally static expression
-Parsing VHDL file "D:/repo/avmis/SCHEME_TEST.vhd" into library work
+Parsing VHDL file "D:/repo/avmis/JKTrigge_Test.vhd" into library work
 Starting static elaboration
+WARNING:HDLCompiler:89 - "D:/repo/avmis/JKTrigge_Test.vhd" Line 40: <jktrigger> remains a black-box since it has no binding entity.
 Completed static elaboration
-Fuse Memory Usage: 107616 KB
-Fuse CPU Usage: 826 ms
+Fuse Memory Usage: 106320 KB
+Fuse CPU Usage: 763 ms
+WARNING:Simulator:648 - "D:/repo/avmis/JKTrigge_Test.vhd" Line 40. Instance jktrigger is unbound
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package std_logic_arith
-Compiling package textio
-Compiling package std_logic_textio
-Compiling architecture jkt of entity JKTrigger [jktrigger_default]
-Compiling architecture behavioral of entity SCHEME [scheme_default]
-Compiling architecture behavior of entity scheme_test
+Compiling architecture behavior of entity jktrigger_test
 Time Resolution for simulation is 1ps.
-Waiting for 4 sub-compilation(s) to finish...
-Compiled 10 VHDL Units
-Built simulation executable D:/repo/avmis/SCHEME_TEST_isim_beh.exe
-Fuse Memory Usage: 125840 KB
-Fuse CPU Usage: 1248 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 VHDL Units
+Built simulation executable D:/repo/avmis/JKTrigger_Test_isim_par.exe
+Fuse Memory Usage: 115264 KB
+Fuse CPU Usage: 1419 ms

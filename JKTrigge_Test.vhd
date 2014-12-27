@@ -12,7 +12,7 @@ ARCHITECTURE behavior OF JKTrigger_Test IS
          K : IN  std_logic;
          NRst : IN  std_logic;
          NSet : IN  std_logic;
-         C : IN  std_logic;
+         CLK : IN  std_logic;
          Q : OUT  std_logic;
          NQ : OUT  std_logic
         );
@@ -24,7 +24,7 @@ ARCHITECTURE behavior OF JKTrigger_Test IS
    signal K : std_logic := '1';
    signal NRst : std_logic := '1';
    signal NSet : std_logic := '1';
-   signal C : std_logic := '0';
+   signal CLK : std_logic := '0';
 
  	--Outputs
    signal Q : std_logic;
@@ -42,56 +42,52 @@ BEGIN
           K => K,
           NRst => NRst,
           NSet => NSet,
-          C => C,
+          CLK => CLK,
           Q => Q,
           NQ => NQ
         );
 
-   -- Clock process definitions
-   C_process :process
-   begin
-		C <= '0';
-		wait for C_period/2;
-		C <= '1';
-		wait for C_period/2;
-   end process;
- 
+-- Stimulus process
+    CLK_proc: process
+    begin		
+        wait for 50 ns;
+        CLK <= not CLK;		
+    end process;
+	
 
-   -- Stimulus process
-   stim_proc_NRst: process
-   begin		
-		wait for 10ns;
-		NRst <= '0';
-		wait for 10ns;
-		NRst <= '1';
-		wait for 60ns;
-   end process stim_proc_NRst;
-	
-	stim_proc_NSet: process
-   begin		
-		wait for 40ns;
-		NSet<= '0';
-		wait for 10ns;
-		NSet <= '1';
-		wait for 30ns;
-   end process stim_proc_NSet;
-	
-	stim_proc_J: process
-   begin		
-		wait for 50ns;
-		J <= '0';
-		wait for 10ns;
-		J <= '1';
-		wait for 20ns;
-   end process stim_proc_J;
-	
-	stim_proc_K: process
-   begin		
-		wait for 60ns;
-		K <= '0';
-		wait for 10ns;
-		K <= '1';
-		wait for 10ns;
-   end process stim_proc_K;
+-- Stimulus process
+    stim_proc: process
+    begin         
+
+        wait for 100 ns;
+
+
+        NRst<='0';
+        wait for 100 ns;
+
+
+        NRst<='1';
+        wait for 200 ns;
+
+        NSet<='0';
+        wait for 100 ns;
+
+        NSet<='1';
+        J<='0';
+        wait for 100 ns;
+
+        J<='1';
+        K<='0';
+        wait for 100 ns;
+        
+        K<='1';
+        wait for 100 ns;
+        
+        NRst<='0';
+        NSet<='0';
+        J<='0';
+        K<='0';
+        wait;
+    end process;
 
 END;

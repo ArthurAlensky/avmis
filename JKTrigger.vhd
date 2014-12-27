@@ -6,7 +6,7 @@ entity JKTrigger is
 		  K : in  STD_LOGIC;
 		  NRst : in  STD_LOGIC;
 		  NSet : in  STD_LOGIC;
-		  C : in  STD_LOGIC;
+		  CLK : in  STD_LOGIC;
 		  Q : out  STD_LOGIC;
 		  NQ : out  STD_LOGIC);
 end JKTrigger;
@@ -14,27 +14,30 @@ end JKTrigger;
 
 
 architecture JKT of JKTrigger is
-signal Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8: std_logic;
 begin
 
-process(NRST, NSET, C) begin
-
-	IF NRST = '0' and NSET = '0' THEN
-		Q1 <= 'X';
-	ELSIF	(NRST = '0') THEN
-		Q1 <= '0';
-	ELSIF NSET = '0' THEN
-		Q1 <= '1';
-	ELSIF (C'EVENT AND C = '1' AND J = '1' AND K = '1') THEN
-		Q1 <= NOT Q1;
-	ELSIF (C'EVENT AND C = '1' AND J = '1' AND K = '0') THEN
-		Q1 <= '1';
-	ELSIF (C'EVENT AND C = '1' AND J = '0' AND K = '1') THEN
-		Q1 <= '0';
-	END IF;	
+process(CLK, NRST, NSET) 
+variable temp: std_logic:='0';
+begin
+if(NRST='0') then
+	temp := '0';
+elsif ( NSET = '0' ) then
+	temp := '1';
+elsif (CLK'event and CLK='1') then
+		if (J='0' and K='0') then
+			temp := temp;
+		elsif (J='0' and K='1') then
+			temp := '0';
+		elsif (J='1' and K='0') then
+			temp := '1';
+		elsif (J='1' and K='1') then
+			temp := not (temp);
+		end if;
+	end if;
+	
+	Q <= temp;
+	NQ <= NOT temp;
 end process;
-Q <= Q1;
-NQ <= NOT Q1;
 end JKT;
 
 
